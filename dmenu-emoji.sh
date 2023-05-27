@@ -22,6 +22,7 @@ case "$1" in
     ;;
   "")
     bash $0 list | dmenu -p 'Emoji: ' | bash $0 copy
+    xclip -selection clipboard -o
     ;;
 esac
 
